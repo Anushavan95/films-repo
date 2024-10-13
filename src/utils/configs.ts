@@ -13,7 +13,7 @@ export const navbarMenuTabs: NavbarMenuTab[] = [
 ]
 
 export const convertSeconds =(seconds: string)=>{
-  const hours = Math.floor(Number(seconds) / 3600); // Calculate hours
-  const minutes = Math.floor((Number(seconds) % 3600) / 60); // Calculate remaining minutes
-  return { hours, minutes }; // Return an object with hours and minutes
+  const hours = Math.floor(Number(seconds) / 3600); 
+  const minutes = Math.floor((Number(seconds) % 3600) / 60); 
+  return { hours, minutes }; 
 }
