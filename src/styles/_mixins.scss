@@ -1,0 +1,13 @@
+@mixin TextVariant ($size, $color, $weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}
+
+
+
+@mixin buttonVariant ($size, $color, $bg-color) {
+    font-size: $size;
+    color: $color;
+    background-color: $bg-color;
+}

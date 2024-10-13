@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+#root {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.main-container {
+  position: absolute;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    gap: 35px;
+
+}
+
+
+
+.container-card {
+  margin-top: 160px;
+  @media screen and (max-width: 1600px) {
+    margin-top: 50px;
+  }
+.swiper {
+  bottom: 0;
+  width: 100%;
+}
+.swiper-slide  {
+  width: 200px !important;
+}
+}

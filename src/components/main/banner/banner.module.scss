@@ -1,0 +1,60 @@
+@import "../../../styles/mixins";
+
+.banner_content_main {
+	margin-left: 160px;
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 170px);
+}
+
+.banner_container {
+	color: white;
+	margin-top: 150px;
+	display: flex;
+
+	&_title {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+		span {
+			color: #858688;
+		}
+	}
+
+	&_time {
+		display: flex;
+		gap: 25px;
+		margin: 25px 0px;
+	}
+
+	&_btns {
+		display: flex;
+		gap: 18px;
+		max-width: 520px;
+		width: 100%;
+		margin-top: 25px;
+
+		button {
+			flex: 1;
+			border: none;
+
+			&:first-child {
+				@include buttonVariant(32px, #0c0c0c, #f1f1f1);
+				display: flex;
+				gap: 15px;
+				justify-content: center;
+				align-items: center;
+				border-radius: 40px;
+			}
+
+			&:last-child {
+				@include buttonVariant(32px, #f1f1f1, inherit);
+				background: #2727f5;
+				background: linear-gradient(159deg,
+						#2727f5 0.00%,
+						#001671 100.00%);
+				border-radius: 40px;
+			}
+		}
+	}
+}
